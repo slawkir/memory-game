@@ -7,16 +7,16 @@
 body {
     height: 100vh;
     display: flex;
-    background: #060AB2
+    background: rgb(187, 184, 184)
 }
 
-img {
+/*img {
     width: 100px;
-}
+}*/
 
 .memory-game {
-    width: 640px;
-    height: 640px;
+    width: 765px;
+    height: 605px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -24,11 +24,11 @@ img {
 }
 
 .memory-card {
-    width: calc(25% -10px);
-    height: calc(33.333% -10px);
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
     margin: 5px;
     position: relative;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
@@ -50,7 +50,15 @@ img {
     padding: 20px;
     position: absolute;
     border-radius: 5px;
-    background: #1C7CCC;
+    background: rgb(226, 225, 225);
     backface-visibility: hidden;
+}
+
+.back-face {
+    object-fit: fill;
+}
+
+.front-face {
+    transform: rotateY(180deg);
 }
 
