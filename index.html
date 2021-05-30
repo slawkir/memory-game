@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
-    
+    <div class="button-match">
+      <a href="#" class="link"><H2 class="button-match__title">MATCH</H2></a>
+    </div>
+    <div class="game-rules">
+      <a href="#" class="link"><H2 class="game-rules__title">About Game</H2></a>
+    </div>
+    <div class="score">
+      <a href="#" class="link"><H2 class="score-title">Best Score</H2></a>
+    </div>
+    <div class="settings">
+      <a href="#" class="link"><H2 class="settings-title">Best Score</H2></a>
+    </div>
+    <div class="button-stop">
+      <a href="#" class="link"><H2 class="button-stop__title">Stop Game</H2></a>
+    </div>
   </header>
-  <section class="memory-game">
-    <div class="memory-card" data-brand="amazon"> <!--ПОТОМ ЗАМЕНИТЬ И В SCRIPT.JS ТОЖЕ-->
-      <img class="front-face" src="./assets/img/amazon.svg" alt="amazon">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div>
-  
-    <div class="memory-card" data-brand="amazon">
-      <img class="front-face" src="./assets/img/amazon.svg" alt="amazon">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div>
-  
-    <div class="memory-card" data-brand="pinterest">
-      <img class="front-face" src="./assets/img/pinterest.svg" alt="pinterest">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div>
-  
-    <div class="memory-card" data-brand="pinterest">
-      <img class="front-face" src="./assets/img/pinterest.svg" alt="pinterest">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div>
-  
-    <div class="memory-card" data-brand="vk">
-      <img class="front-face" src="./assets/img/vk.svg" alt="vk">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div>
-  
-    <div class="memory-card" data-brand="vk">
-      <img class="front-face" src="./assets/img/vk.svg" alt="vk">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div>
-  
-    <div class="memory-card" data-brand="android">
-      <img class="front-face" src="./assets/img/android.svg" alt="android">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div>
-  
-    <div class="memory-card" data-brand="android">
-      <img class="front-face" src="./assets/img/android.svg" alt="android">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div>
-  
-    <div class="memory-card" data-brand="google">
-      <img class="front-face" src="./assets/img/google.svg" alt="Backbone">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div>
-  
-    <div class="memory-card" data-brand="google">
-      <img class="front-face" src="./assets/img/google.svg" alt="google">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div>
-  
-    <div class="memory-card" data-brand="youtube">
-      <img class="front-face" src="./assets/img/youtube.svg" alt="youtube">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div>
-  
-    <div class="memory-card" data-brand="youtube">
-      <img class="front-face" src="./assets/img/youtube.svg" alt="youtube">
-      <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
-    </div> 
+  <section class="memory">
+    <div class="memory-game">
+      <div class="memory-card" data-brand="amazon"> 
+        <img class="front-face" src="./assets/img/amazon.svg" alt="amazon">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+      <div class="memory-card" data-brand="amazon">
+        <img class="front-face" src="./assets/img/amazon.svg" alt="amazon">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+      <div class="memory-card" data-brand="pinterest">
+        <img class="front-face" src="./assets/img/pinterest.svg" alt="pinterest">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+      <div class="memory-card" data-brand="pinterest">
+        <img class="front-face" src="./assets/img/pinterest.svg" alt="pinterest">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+      <div class="memory-card" data-brand="vk">
+        <img class="front-face" src="./assets/img/vk.svg" alt="vk">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+      <div class="memory-card" data-brand="vk">
+        <img class="front-face" src="./assets/img/vk.svg" alt="vk">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+      <div class="memory-card" data-brand="android">
+        <img class="front-face" src="./assets/img/android.svg" alt="android">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+      <div class="memory-card" data-brand="android">
+        <img class="front-face" src="./assets/img/android.svg" alt="android">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+      <div class="memory-card" data-brand="google">
+        <img class="front-face" src="./assets/img/google.svg" alt="Backbone">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+      <div class="memory-card" data-brand="google">
+        <img class="front-face" src="./assets/img/google.svg" alt="google">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+      <div class="memory-card" data-brand="youtube">
+        <img class="front-face" src="./assets/img/youtube.svg" alt="youtube">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+      <div class="memory-card" data-brand="youtube">
+        <img class="front-face" src="./assets/img/youtube.svg" alt="youtube">
+        <img class="back-face" src="./assets/img/back-side.svg" alt="Memory Card">
+      </div>
+    </div>   
   </section>
   <script src="./script.js"></script>
 </body>
